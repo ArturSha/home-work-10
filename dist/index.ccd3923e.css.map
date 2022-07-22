@@ -1,1 +1,1 @@
-{"mappings":"","sources":["src/styles/variables.scss"],"sourcesContent":[null],"names":[],"version":3,"file":"index.ccd3923e.css.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"","sources":["src/styles/variables.scss"],"sourcesContent":["$font-color: #1f3f68;\r\n"],"names":[],"version":3,"file":"index.ccd3923e.css.map","sourceRoot":"/__parcel_source_root/"}
