@@ -225,7 +225,7 @@ body {
 }
 
 .finished {
-  padding: 91px 5px;
+  padding: 91px 5px 192px;
 
   .container {
     max-width: 950px;
@@ -243,6 +243,7 @@ body {
       .container-title {
         max-width: 230px;
         width: 100%;
+        padding: 5px;
 
         h2 {
           color: #1f3f68;
@@ -314,4 +315,69 @@ body {
       // хотелось бы понять, когда мы вставляем картинку в контейнер, какие свойства мы должны к ней применить
     }
   }
+}
+
+.client {
+  padding: 91px 5px;
+  background: #5a98d0;
+  border-radius: 200px 0px 0px 0px;
+
+  .container {
+    max-width: 950px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+
+    &-text {
+      display: flex;
+      max-width: 840px;
+      width: 100%;
+      gap: 90px;
+      margin-bottom: 111px;
+
+      .container-title {
+        max-width: 230px;
+        width: 100%;
+
+        .__title {
+          color: #ffffff;
+        }
+      }
+      .__text {
+        color: #ffffff;
+      }
+    }
+
+    &-clients {
+      max-width: 950px;
+      width: 100%;
+      margin: 0 auto 125px;
+      padding: 5px;
+      display: flex;
+      flex-wrap: wrap;
+
+      &-cells {
+        width: 25%;
+        font-family: "GilroySemiBold";
+        font-size: 20px;
+        line-height: 46px;
+        letter-spacing: 0.02em;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 41px 40px;
+
+        &:nth-last-child(1) {
+          background: #1f3f68;
+          background: rgba(0, 0, 0, 0.2);
+        }
+        @include nth-child__border;
+      }
+    }
+  }
+}
+
+.joinus {
+  background: #316099;
+  border-radius: 0px 200px 0px 0px;
+  margin-right: 96px;
 }

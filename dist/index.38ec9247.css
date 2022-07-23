@@ -232,7 +232,7 @@ body .__text {
 }
 
 .finished {
-  padding: 91px 5px;
+  padding: 91px 5px 192px;
 }
 
 .finished .container {
@@ -253,6 +253,7 @@ body .__text {
 .finished .container-text .container-title {
   max-width: 230px;
   width: 100%;
+  padding: 5px;
 }
 
 .finished .container-text .container-title h2 {
@@ -323,6 +324,74 @@ body .__text {
   height: 100%;
   width: 100%;
   position: relative;
+}
+
+.client {
+  background: #5a98d0;
+  border-radius: 200px 0 0;
+  padding: 91px 5px;
+}
+
+.client .container {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.client .container-text {
+  max-width: 840px;
+  width: 100%;
+  gap: 90px;
+  margin-bottom: 111px;
+  display: flex;
+}
+
+.client .container-text .container-title {
+  max-width: 230px;
+  width: 100%;
+}
+
+.client .container-text .container-title .__title, .client .container-text .__text {
+  color: #fff;
+}
+
+.client .container-clients {
+  max-width: 950px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto 125px;
+  padding: 5px;
+  display: flex;
+}
+
+.client .container-clients-cells {
+  width: 25%;
+  letter-spacing: .02em;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 41px 40px;
+  font-family: GilroySemiBold;
+  font-size: 20px;
+  line-height: 46px;
+}
+
+.client .container-clients-cells:nth-last-child(1) {
+  background: #0003;
+}
+
+.client .container-clients-cells:nth-child(n+5) {
+  border-top: 1px solid #fff;
+}
+
+.client .container-clients-cells:nth-child(4n+1), .client .container-clients-cells:nth-child(4n+2), .client .container-clients-cells:nth-child(4n+3) {
+  border-right: 1px solid #fff;
+}
+
+.joinus {
+  background: #316099;
+  border-radius: 0 200px 0 0;
+  margin-right: 96px;
 }
 
 /*# sourceMappingURL=index.38ec9247.css.map */

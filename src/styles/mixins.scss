@@ -34,3 +34,18 @@
   color: #ffffff;
   opacity: 0.8;
 }
+
+@mixin nth-child__border {
+  &:nth-child(n + 5) {
+    border-top: 1px solid #ffffff;
+  }
+  &:nth-child(4n + 1) {
+    border-right: 1px solid #ffffff;
+  }
+  &:nth-child(4n + 2) {
+    border-right: 1px solid #ffffff;
+  }
+  &:nth-child(4n + 3) {
+    border-right: 1px solid #ffffff;
+  }
+}
