@@ -16,3 +16,21 @@
   letter-spacing: 0.05em;
   color: #5a98d0;
 }
+
+@mixin card__title {
+  font-family: "GilroyRegular";
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+@mixin card__subtitle {
+  font-family: "GilroyRegular";
+  font-size: 16px;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  opacity: 0.8;
+}

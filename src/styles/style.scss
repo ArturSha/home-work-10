@@ -42,7 +42,7 @@ body {
 .header {
   max-width: 1200px;
   width: 100%;
-  padding: 40px 0 45px;
+  padding: 40px 5px 45px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -85,9 +85,9 @@ body {
     position: relative;
     display: block;
     border: none;
-    height: 32px;
     width: 32px;
     background: none;
+    top: -10px;
 
     span {
       @include burger;
@@ -166,6 +166,7 @@ body {
     position: relative;
     max-width: 940px;
     margin: 0 auto;
+    padding: 5px;
 
     ._item-1 {
       grid-area: item-1;
@@ -184,6 +185,7 @@ body {
     &-title {
       position: absolute;
       max-width: 360px;
+      padding: 5px;
     }
 
     &-card {
@@ -218,6 +220,98 @@ body {
           transform: translateY(3px);
         }
       }
+    }
+  }
+}
+
+.finished {
+  padding: 91px 5px;
+
+  .container {
+    max-width: 950px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px;
+
+    &-text {
+      display: flex;
+      max-width: 840px;
+      width: 100%;
+      gap: 90px;
+      margin-bottom: 96px;
+
+      .container-title {
+        max-width: 230px;
+        width: 100%;
+
+        h2 {
+          color: #1f3f68;
+        }
+      }
+    }
+
+    &-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 96px;
+
+      ._marketplace__background {
+        background: linear-gradient(
+          308.85deg,
+          rgba(66, 165, 245, 0.4) -1.71%,
+          rgba(21, 101, 192, 0.6) 74.54%
+        );
+      }
+
+      ._board__background {
+        background: linear-gradient(
+          306.48deg,
+          rgba(66, 165, 245, 0.4) 0%,
+          rgba(21, 101, 192, 0.6) 97.81%
+        );
+      }
+
+      &-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+
+        &-text {
+          position: absolute;
+          top: 48px;
+          right: 48px;
+
+          .card__title {
+            @include card__title;
+          }
+
+          .card__subtitle {
+            @include card__subtitle;
+            text-align: end;
+          }
+        }
+
+        ._position {
+          left: 32px;
+          top: 24px;
+
+          p {
+            text-align: start;
+          }
+        }
+      }
+    }
+
+    ._width {
+      max-width: 422px;
+      border-radius: 10px;
+    }
+    ._size__img {
+      position: relative;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      // хотелось бы понять, когда мы вставляем картинку в контейнер, какие свойства мы должны к ней применить
     }
   }
 }
