@@ -60,13 +60,13 @@ body {
       background-color: #316099;
       border-radius: 100%;
     }
-
-    &__simbol {
+    &__symbol {
       position: absolute;
       transform: translateX(50%);
       top: 0;
       z-index: 1;
       background-color: #ffffff;
+      animation-name: symbol;
 
       height: 32px;
       width: 32px;
@@ -102,6 +102,51 @@ body {
         @include burger;
         transform: translateY(5px);
       }
+    }
+  }
+}
+.header:hover {
+  .logo__ball {
+    animation-name: ball;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+  }
+
+  @keyframes ball {
+    10% {
+      transform: translateX(60%);
+    }
+    20% {
+      transform: translateX(120%);
+    }
+    30% {
+      transform: translateX(180%);
+    }
+
+    40% {
+      transform: translateX(120%);
+    }
+
+    50% {
+      z-index: 2;
+      transform: translateX(60%);
+    }
+    60% {
+      z-index: 2;
+      transform: translateX(0%);
+    }
+    70% {
+      z-index: 2;
+      transform: translateX(-60%);
+    }
+    80% {
+      z-index: 2;
+      transform: translateX(-90%);
+    }
+    90% {
+      transform: translateX(-60%);
     }
   }
 }
@@ -345,6 +390,7 @@ body {
       padding: 5px;
       display: flex;
       flex-wrap: wrap;
+      counter-reset: items;
 
       &-cells {
         width: 25%;
@@ -355,6 +401,21 @@ body {
         color: #f2f2f2;
         text-align: center;
         padding: 41px 40px;
+        position: relative;
+
+        &:nth-last-child(n + 2)::after {
+          position: absolute;
+          display: block;
+          content: counter(items) "";
+          counter-increment: items;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          // background-color: rgba(205, 174, 48, 0.903);
+          transform: translateY(-100%);
+          right: 5px;
+          margin-top: -7px;
+        }
 
         @include nth-child__border;
 
@@ -439,7 +500,7 @@ body {
       border-radius: 100%;
     }
 
-    .footer__simbol {
+    .footer__symbol {
       position: absolute;
       transform: translateX(50%);
       top: 0;

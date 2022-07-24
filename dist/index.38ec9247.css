@@ -57,7 +57,7 @@ body .__text {
   position: relative;
 }
 
-.header .logo__simbol {
+.header .logo__symbol {
   z-index: 1;
   height: 32px;
   width: 32px;
@@ -70,6 +70,7 @@ body .__text {
   font-family: GilroyBold;
   font-size: 20px;
   line-height: 28px;
+  animation-name: symbol;
   position: absolute;
   top: 0;
   transform: translateX(50%);
@@ -119,6 +120,56 @@ body .__text {
   top: 50%;
   left: 50%;
   transform: translateY(5px);
+}
+
+.header:hover .logo__ball {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-delay: 1s;
+}
+
+@keyframes ball {
+  10% {
+    transform: translateX(60%);
+  }
+
+  20% {
+    transform: translateX(120%);
+  }
+
+  30% {
+    transform: translateX(180%);
+  }
+
+  40% {
+    transform: translateX(120%);
+  }
+
+  50% {
+    z-index: 2;
+    transform: translateX(60%);
+  }
+
+  60% {
+    z-index: 2;
+    transform: translateX(0%);
+  }
+
+  70% {
+    z-index: 2;
+    transform: translateX(-60%);
+  }
+
+  80% {
+    z-index: 2;
+    transform: translateX(-90%);
+  }
+
+  90% {
+    transform: translateX(-60%);
+  }
 }
 
 .intro-container {
@@ -359,6 +410,7 @@ body .__text {
 .client .container-clients {
   max-width: 950px;
   width: 100%;
+  counter-reset: items;
   flex-wrap: wrap;
   margin: 0 auto 125px;
   padding: 5px;
@@ -374,6 +426,20 @@ body .__text {
   font-family: GilroySemiBold;
   font-size: 20px;
   line-height: 46px;
+  position: relative;
+}
+
+.client .container-clients-cells:nth-last-child(n+2):after {
+  content: counter(items) "";
+  counter-increment: items;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-top: -7px;
+  display: block;
+  position: absolute;
+  right: 5px;
+  transform: translateY(-100%);
 }
 
 .client .container-clients-cells:nth-child(n+5) {
@@ -473,7 +539,7 @@ body .__text {
   position: relative;
 }
 
-.footer-logo .footer__simbol {
+.footer-logo .footer__symbol {
   z-index: 1;
   height: 32px;
   width: 32px;
