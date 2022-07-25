@@ -70,7 +70,6 @@ body .__text {
   font-family: GilroyBold;
   font-size: 20px;
   line-height: 28px;
-  animation-name: symbol;
   position: absolute;
   top: 0;
   transform: translateX(50%);
@@ -124,10 +123,9 @@ body .__text {
 
 .header:hover .logo__ball {
   animation-name: ball;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: 2;
-  animation-delay: 1s;
 }
 
 @keyframes ball {
@@ -202,7 +200,18 @@ body .__text {
   font-family: GilroyRegular;
   font-size: 16px;
   line-height: 26px;
-  box-shadow: 5px 10px 20px #356ead33;
+  transition: all .3s;
+  position: relative;
+  box-shadow: 0 3px #356ead33;
+}
+
+.intro-container .intro__button:hover {
+  box-shadow: 0 3px #39c5d899;
+}
+
+.intro-container .intro__button:active {
+  box-shadow: none;
+  top: 3px;
 }
 
 .feature {
@@ -275,6 +284,21 @@ body .__text {
   font-family: GilroySemiBold;
   font-size: 14px;
   line-height: 30px;
+}
+
+.feature-container-card .__link:hover .__link__img {
+  animation-name: arrow;
+  animation-duration: 1s;
+}
+
+@keyframes arrow {
+  33% {
+    transform: translateX(-15px)translateY(3px);
+  }
+
+  66% {
+    transform: translateX(5px)translateY(3px);
+  }
 }
 
 .feature-container-card .__link__img {
@@ -499,6 +523,7 @@ body .__text {
 
 .joinus-container-button {
   align-items: center;
+  padding-bottom: 90px;
   display: flex;
 }
 
@@ -513,8 +538,61 @@ body .__text {
   font-family: GilroyRegular;
   font-size: 16px;
   line-height: 26px;
-  transform: translateY(-70%);
-  box-shadow: 5px 10px 20px #356ead33;
+  position: relative;
+  box-shadow: 0 3px #356ead33;
+}
+
+.joinus-container .joinus__button:hover {
+  animation: rotate .7s ease-in-out both;
+}
+
+.joinus-container .joinus__button:hover span {
+  animation: storm .7s ease-in-out 60ms both;
+  display: inline-block;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(3deg)translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-3deg)translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg)translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg)translate3d(0, 0, 0);
+  }
+}
+
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0)translateZ(0);
+  }
+
+  25% {
+    transform: translate3d(4px, 0, 0)translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(-3px, 0, 0)translateZ(0);
+  }
+
+  75% {
+    transform: translate3d(2px, 0, 0)translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0)translateZ(0);
+  }
 }
 
 .footer {
