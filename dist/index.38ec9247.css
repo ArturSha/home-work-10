@@ -1,4 +1,4 @@
-body h1 {
+h1 {
   letter-spacing: .04em;
   color: #1f3f68;
   margin-bottom: 32px;
@@ -7,7 +7,7 @@ body h1 {
   line-height: 74px;
 }
 
-body h2 {
+h2 {
   letter-spacing: .05em;
   color: #316099;
   font-family: GilroySemiBold, Arial;
@@ -15,7 +15,7 @@ body h2 {
   line-height: 46px;
 }
 
-body h3 {
+h3 {
   letter-spacing: .05em;
   color: #1f3f68;
   margin-bottom: 16px;
@@ -24,7 +24,7 @@ body h3 {
   line-height: 30px;
 }
 
-body .__text {
+.__text {
   letter-spacing: .05em;
   color: #1f3f68;
   opacity: .6;
@@ -39,7 +39,7 @@ body .__text {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 40px 5px 45px;
+  padding: 40px 20px 45px;
   display: flex;
 }
 
@@ -337,6 +337,7 @@ body .__text {
 
 .finished .container-card {
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 96px;
   display: flex;
 }
@@ -682,6 +683,18 @@ body .__text {
 .footer-container ._opacity {
   color: #fff6;
   padding: 64px 0;
+}
+
+.footer-rights {
+  letter-spacing: .05em;
+  color: #fff;
+  max-width: 870px;
+  color: #fff6;
+  margin: 0 auto;
+  padding: 64px 5px;
+  font-family: GilroyRegular;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 /*# sourceMappingURL=index.38ec9247.css.map */
