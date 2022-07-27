@@ -1,3 +1,5 @@
+@import "mixins.scss";
+
 @media (max-width: 1250px) {
   .header {
     padding: 40px 50px 45px;
@@ -222,6 +224,10 @@
         padding-bottom: 15px;
       }
     }
+    &-rights {
+      padding-bottom: 5px;
+      text-align: center;
+    }
   }
 }
 
@@ -275,6 +281,13 @@
   }
 
   .client {
+    .container-clients {
+      &-cells {
+        width: 50%;
+        @include mobile-nth-child;
+      }
+    }
+    border-radius: 0 90px 0 0;
     .container-clients-cells {
       padding: 5px;
 
@@ -286,6 +299,7 @@
 
   .joinus {
     margin-right: 20px;
+    border-radius: 0 90px 0 0;
     &-container-text {
       h2 {
         line-height: 36px;
@@ -314,9 +328,8 @@
       line-height: 16px;
       font-size: 14px;
       text-align: start;
-
       &:nth-last-child(n + 2)::after {
-        right: -20px;
+        transform: translateY(-65%);
       }
     }
   }

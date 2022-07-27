@@ -24,7 +24,7 @@ h3 {
   line-height: 30px;
 }
 
-.__text {
+.-regular {
   letter-spacing: .05em;
   color: #1f3f68;
   opacity: .6;
@@ -123,7 +123,7 @@ h3 {
 
 .header:hover .logo__ball {
   animation-name: ball;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-iteration-count: 2;
 }
@@ -184,7 +184,7 @@ h3 {
   max-width: 520px;
 }
 
-.intro-container .__text {
+.intro-container .-regular {
   margin-bottom: 71px;
 }
 
@@ -274,7 +274,7 @@ h3 {
   left: 65px;
 }
 
-.feature-container-card .__text {
+.feature-container-card .-regular {
   margin-bottom: 32px;
 }
 
@@ -428,7 +428,7 @@ h3 {
   width: 100%;
 }
 
-.client .container-text .container-title .__title, .client .container-text .__text {
+.client .container-text .container-title .__title, .client .container-text .-regular {
   color: #fff;
 }
 
@@ -554,45 +554,45 @@ h3 {
 
 @keyframes rotate {
   0% {
-    transform: rotate(0deg)translate3d(0, 0, 0);
+    transform: rotate(0deg);
   }
 
   25% {
-    transform: rotate(3deg)translate3d(0, 0, 0);
+    transform: rotate(3deg);
   }
 
   50% {
-    transform: rotate(-3deg)translate3d(0, 0, 0);
+    transform: rotate(-3deg);
   }
 
   75% {
-    transform: rotate(1deg)translate3d(0, 0, 0);
+    transform: rotate(1deg);
   }
 
   100% {
-    transform: rotate(0deg)translate3d(0, 0, 0);
+    transform: rotate(0deg);
   }
 }
 
 @keyframes storm {
   0% {
-    transform: translate3d(0, 0, 0)translateZ(0);
+    transform: translate3d(0, 0, 0);
   }
 
   25% {
-    transform: translate3d(4px, 0, 0)translateZ(0);
+    transform: translate3d(4px, 0, 0);
   }
 
   50% {
-    transform: translate3d(-3px, 0, 0)translateZ(0);
+    transform: translate3d(-3px, 0, 0);
   }
 
   75% {
-    transform: translate3d(2px, 0, 0)translateZ(0);
+    transform: translate3d(2px, 0, 0);
   }
 
   100% {
-    transform: translate3d(0, 0, 0)translateZ(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
