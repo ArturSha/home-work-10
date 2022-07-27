@@ -125,43 +125,49 @@ h3 {
   animation-name: ball;
   animation-duration: 1.5s;
   animation-timing-function: linear;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
 }
 
 @keyframes ball {
   10% {
+    background: linear-gradient(90deg, #316099 89%, #94bbe9 100%);
     transform: translateX(60%);
   }
 
   20% {
+    background: linear-gradient(90deg, #316099 71%, #94bbe9 100%);
     transform: translateX(120%);
   }
 
   30% {
+    background: linear-gradient(90deg, #316099 33%, #94bbe9 100%);
     transform: translateX(180%);
   }
 
   40% {
+    background: linear-gradient(90deg, #316099 0%, #94bbe9 100%);
     transform: translateX(120%);
   }
 
   50% {
     z-index: 2;
-    transform: translateX(60%);
+    background: linear-gradient(90deg, #94bbe9 0% 26%, #316099 99%);
   }
 
   60% {
     z-index: 2;
+    background: linear-gradient(90deg, #94bbe9 0%, #316099 87%);
     transform: translateX(0%);
   }
 
   70% {
     z-index: 2;
-    transform: translateX(-60%);
+    background: linear-gradient(90deg, #94bbe9 0%, #316099 64%);
   }
 
   80% {
     z-index: 2;
+    background: linear-gradient(90deg, #94bbe9 0%, #316099 34%);
     transform: translateX(-90%);
   }
 

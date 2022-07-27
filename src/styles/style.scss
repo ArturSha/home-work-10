@@ -106,39 +106,86 @@ h3 {
     animation-name: ball;
     animation-timing-function: linear;
     animation-duration: 1.5s;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
   }
 
   @keyframes ball {
     10% {
       transform: translateX(60%);
+      background: rgb(49, 96, 153);
+      background: linear-gradient(
+        90deg,
+        rgba(49, 96, 153, 1) 89%,
+        rgba(148, 187, 233, 1) 100%
+      );
     }
     20% {
       transform: translateX(120%);
+      background: rgb(49, 96, 153);
+      background: linear-gradient(
+        90deg,
+        rgba(49, 96, 153, 1) 71%,
+        rgba(148, 187, 233, 1) 100%
+      );
     }
     30% {
       transform: translateX(180%);
+      background: rgb(49, 96, 153);
+      background: linear-gradient(
+        90deg,
+        rgba(49, 96, 153, 1) 33%,
+        rgba(148, 187, 233, 1) 100%
+      );
     }
 
     40% {
       transform: translateX(120%);
+      background: rgb(49, 96, 153);
+      background: linear-gradient(
+        90deg,
+        rgba(49, 96, 153, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
     }
 
     50% {
       z-index: 2;
-      transform: translateX(60%);
+      background: rgb(148, 187, 233);
+      background: linear-gradient(
+        90deg,
+        rgba(148, 187, 233, 1) 0%,
+        rgba(148, 187, 233, 1) 26%,
+        rgba(49, 96, 153, 1) 99%
+      );
     }
     60% {
       z-index: 2;
       transform: translateX(0%);
+      background: rgb(148, 187, 233);
+      background: linear-gradient(
+        90deg,
+        rgba(148, 187, 233, 1) 0%,
+        rgba(49, 96, 153, 1) 87%
+      );
     }
     70% {
       z-index: 2;
-      transform: translateX(-60%);
+      background: rgb(148, 187, 233);
+      background: linear-gradient(
+        90deg,
+        rgba(148, 187, 233, 1) 0%,
+        rgba(49, 96, 153, 1) 64%
+      );
     }
     80% {
       z-index: 2;
       transform: translateX(-90%);
+      background: rgb(148, 187, 233);
+      background: linear-gradient(
+        90deg,
+        rgba(148, 187, 233, 1) 0%,
+        rgba(49, 96, 153, 1) 34%
+      );
     }
     90% {
       transform: translateX(-60%);
