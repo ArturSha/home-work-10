@@ -286,7 +286,7 @@
   }
 
   .client .container-clients-cells {
-    padding: 5px;
+    padding: 5px 15px;
   }
 
   .client .container-clients-cells:nth-last-child(n+2):after {
@@ -320,6 +320,7 @@
 @media (max-width: 400px) {
   .client .container-clients-cells {
     text-align: start;
+    padding: 10px;
     font-size: 14px;
     line-height: 16px;
   }

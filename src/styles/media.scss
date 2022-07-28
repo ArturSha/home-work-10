@@ -289,7 +289,7 @@
     }
     border-radius: 0 90px 0 0;
     .container-clients-cells {
-      padding: 5px;
+      padding: 5px 15px;
 
       &:nth-last-child(n + 2)::after {
         right: -10px;
@@ -327,6 +327,7 @@
     .container-clients-cells {
       line-height: 16px;
       font-size: 14px;
+      padding: 10px;
       text-align: start;
       &:nth-last-child(n + 2)::after {
         transform: translateY(-65%);
