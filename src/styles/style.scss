@@ -194,14 +194,6 @@ h3 {
 }
 
 .intro {
-  // background: linear-gradient(
-  //   0deg,
-  //   #98c3e8 8.84%,
-  //   rgba(152, 195, 232, 0) 31.12%
-  // );
-  // opacity: 0.2;
-  // box-shadow: inset 0 -100px 0 rgba(16, 112, 177, 0.2); (background обгрызает тень)
-
   &-container {
     max-width: 1366px;
     width: 100%;
@@ -411,7 +403,6 @@ h3 {
       z-index: -1;
       height: 100%;
       width: 100%;
-      // хотелось бы понять, когда мы вставляем картинку в контейнер, какие свойства мы должны к ней применить
     }
   }
 }
@@ -539,7 +530,6 @@ h3 {
     .joinus__button {
       @include button;
       padding: 15px 75px;
-      // transform: translateY(-70%); Можно ли смещать кнопку за счет трансформа, или все же лучше при помощи паддингов контейнеру
 
       &:hover {
         animation: rotate 0.7s ease-in-out both;
@@ -591,6 +581,10 @@ h3 {
   background: #316099;
   margin-right: 96px;
   padding-top: 96px;
+
+  a:hover {
+    color: lightskyblue;
+  }
 
   &-logo {
     display: flex;
@@ -668,6 +662,7 @@ h3 {
       padding: 64px 0;
     }
   }
+
   &-rights {
     @include footer__text;
     max-width: 870px;

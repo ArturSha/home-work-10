@@ -315,7 +315,13 @@
   .footer {
     margin-right: 20px;
 
-    &-container .footer__text {
+    &-container {
+      &-items {
+        width: 50%;
+      }
+    }
+
+    .footer__text {
       padding-bottom: 10px;
       line-height: 18px;
     }

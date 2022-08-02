@@ -311,7 +311,11 @@
     margin-right: 20px;
   }
 
-  .footer-container .footer__text {
+  .footer-container-items {
+    width: 50%;
+  }
+
+  .footer .footer__text {
     padding-bottom: 10px;
     line-height: 18px;
   }
